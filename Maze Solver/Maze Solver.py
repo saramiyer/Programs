@@ -1,20 +1,5 @@
 import turtle
 
-"""
-Assignment 5 - CMPUT 175
-
-Student ID: 1226751 
-
-Creator: Sara Iyer
-
-Read all comments and instructions very carefully.
-
-Do NOT import any other modules (except the copy module if you need it.)
-
-Remember, it is absolutely vital you are perfectly clear on what the data
-structures are - you can always use the type() function to check.
-
-"""
 class Maze():
     def __init__(self, maze_spec):
         
