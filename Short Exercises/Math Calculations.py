@@ -1,3 +1,5 @@
+# Enter a set of numbers and this program gives you the mean, standard deviation and median.
+
 import math
 
 def read_input():
