@@ -1,5 +1,3 @@
-# Sara Lemus - 1226751 - Assignment 3 - K-Colouring
-
 from cImage import *
 import cluster
 import sys
