@@ -1,5 +1,3 @@
-# Sara Iyer - 1226751 - CMPUT 175 Assignment 1
-
 def main ():
    
    # Input the lines
