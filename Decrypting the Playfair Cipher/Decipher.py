@@ -208,12 +208,10 @@ def map_bigrams(plaintext_list, cipher_list, N):
       
       # For each count, add the bigram from the cipher list that
       # corresponds to the index position of the count as the dictionary key
-      # AKA: when count 1 = index pos 1 = first item in the cipher bigram list
       #
       # Add the bigram from the plain list that corresponds to the index
       # position of the count as the dictionary value
-      # AKA: when count 1 = index pos 1 = first item in plain bigram list
-      #
+      
       # GOAL= Associate nth bigram in cipher list to nth bigram in plain list
       map_dictionary[cipher_list[count][1]] = plaintext_list[count][1]
    
