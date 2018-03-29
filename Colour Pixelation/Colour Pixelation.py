@@ -3,13 +3,6 @@ import cluster
 import sys
 import math
 
-"""
-Your task for this assignment is to complete the application that takes an
-original image and creates a new k-coloured image and saves it.
-
-NOTE - Do not modify cluster.py or cImage.py
-"""
-
 def create_centroids(k, image, image_window):
     # This function asks the user to select k pixels with distinct RGB
     # values from the image and store them as centroids. 
@@ -221,11 +214,6 @@ def main():
         
         # Partition the color values in the image.
         # Each pixel is grouped in a cluster based on its closest centroid
-        
-        # PS: Any ties between the closest centroid is resolved by the function
-        # It calls the min function on list of distances then,
-        # Asks for the index of the value (retrieving the 1st matching centroid)
-        # And makes that the centroid of the given point.
         clusters = cluster.assignPointsToClusters(image_centroids, data_file)
         
         # Create a new image where each pixel has the colour value of its
