@@ -1,5 +1,3 @@
-# Sara Iyer - 1226751 - Assignment 4 - Cmput 175
-
 import sys
 import re
 
