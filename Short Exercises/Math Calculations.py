@@ -7,11 +7,8 @@ def read_input():
     This function should read the data input by the user using a command
     prompt and return a sorted list of values.
 
-    Your code should be able to handle both int and float data types. You may
-    also assume the user will input at least two values.
+    Handles both int and float data types.
     """
-
-    # Write your code here and return the proper data
     
     # Get an input of values
     input_numbers = input("Enter a set of numbers: ")
@@ -35,8 +32,6 @@ def my_mean(splitNumbers):
 
     Return: the mean of data
     """
-
-    # Write your code here and return the proper data
     
     # Assign variables
     meanSum = 0
@@ -57,16 +52,14 @@ def my_stdev(splitNumbers,meanCalculation):
     This function should take a list of numbers and calculate the standard
     deviation of the whole list.
 
-    You will need to use math.sqrt() in your code. This is a function that
-    takes a integer/float value as a parameter and returns the square root of
-    the parameter.
+    This is a function that takes a integer/float value as a parameter 
+    and returns the square root of the parameter.
 
     Parameter: data - a list of integers/floats
 
     Return: the standard deviation of data
     """
-
-    # Write your code here and return the proper data
+    
     # Assign Variables
     totalValues = len(splitNumbers)
     stdevSum = 0 
@@ -102,8 +95,7 @@ def my_median(splitNumbers):
 
     Return: the median of data
     """
-
-    # Write your code here and return the proper data
+    
     # Sort the list of values
     splitNumbers.sort()
     
