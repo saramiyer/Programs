@@ -1,5 +1,3 @@
-# Sara Iyer - 1226751 - CMPUT 175 Assignment 2
-
 import math, urllib.request
 
 def main():
