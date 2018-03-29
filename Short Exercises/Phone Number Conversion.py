@@ -1,7 +1,7 @@
 """
 This program asks you to enter a phone number in a ###-####-#### format.
-It takes the largest number and replaces it with an "X" and the second largest
-number with a "Y". If the phone number does not comply with the format or contains
+It takes the largest number and replaces it with an "X" and it takes the second largest
+number  and replaces it with a "Y". If the phone number does not comply with the format or contains
 characters other than numbers, the program returns a message saying it is invalid.
 """
 
