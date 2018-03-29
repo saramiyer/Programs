@@ -68,7 +68,7 @@ class Maze():
                                 wall_coords.append((wall_span[0][0],i))
                         
                         # If the integer in the 1st coord has a smaller value
-                        # hat means the coords are in the right order.
+                        # that means the coords are in the right order.
                         # Get the row coords from interval & add to walls list 
                         else:
                             for i in range(wall_span[0][1],wall_span[1][1]+1):
@@ -132,9 +132,7 @@ class Maze():
                         self.board[row][col] = 'x'
 
     def print_maze(self):
-        """
-        In this function you must print out the maze board.
-        """
+      
         # For each line in the maze
         for line in self.board:
             
@@ -144,12 +142,6 @@ class Maze():
         
 class MazeSolver:
     def __init__(self, maze):
-        """
-        Takes a Maze object to create a solver. The init function initializes
-        variables to hold these objects. self.start is created to make it
-        easier to refer to. self.path is initially None to allow for checking
-        during the recursive call. DO NOT CHANGE THESE VALUES.
-        """
 
         self.maze = maze
         self.start = self.maze.start
@@ -165,8 +157,6 @@ class MazeSolver:
         param: path: a list of positions explored thus far
 
         return: moves: a list of new positions to explore
-
-        DO NOT CHANGE!
         """
 
         moves = []
@@ -205,8 +195,6 @@ class MazeSolver:
     def new_pos(self, pos, move):
         """
         Utility function for get_moves()
-
-        DO NOT CHANGE!
         """
 
         if move == "N":
@@ -225,10 +213,9 @@ class MazeSolver:
         """
         This is the recursive function you will implement. The function takes
         the current position and explored path. At each call, if the current
-        position is not the goal, you must retrieve the list of new moves
-        available and call solve() again with each new move. If the goal is
-        reached, store the path in self.path. Remember, the idea is to find the
-        shortest path.
+        position is not the goal, a list of new moves available is retreived.
+        solve() is called again with each new move. If the goal is
+        reached, store the path in self.path.
         """
         
         # Check if the position we are at corresponds to the goal
@@ -269,10 +256,7 @@ class MazeSolver:
 
 
     def trace(self):
-        """
-        In this function you must add the solution path to the maze board. You
-        can represent each unit in the path with '.'
-        """
+       
         # Generate the maze's matrix to get access to modify all the squares
         for row in range(self.maze.dim[0]):
             for col in range(self.maze.dim[1]):
@@ -291,8 +275,7 @@ class MazeSolver:
 class MazeGraphics:
     def __init__(self, board, path):
         """
-        The maze illustrator. Takes a Maze board and the solution path. You
-        can play around with the turtle settings here if you'd like.
+        The maze illustrator. Takes a Maze board and the solution path.
         """
 
         turtle.speed('fastest')
@@ -472,15 +455,8 @@ class MazeGraphics:
 
 spec = '5,5|0,1:0,2|2,1:3,1|2,3:2,4|3,0:3,0|3,3:3,3|0,4:0,4|0,0|3,4'
 
-"""
-The following code should work perfectly if your code is correctly implemented.
-You can use it as a guide to see what data structures are being transferred
-around.
-"""
-
 ms = MazeSolver(Maze(spec))
 
-# I added a command to print out the initial maze as stated in the assignment directions
 ms.maze.print_maze()
 ms.solve(ms.start, [ms.start])
 ms.trace()
