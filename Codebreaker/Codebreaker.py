@@ -1,5 +1,3 @@
-# Problem 2 - Codebreaker - Assignment 1
-
 def main():
     # Prompts user to input an encrypted file 
     try:
