@@ -1,3 +1,8 @@
+"""
+Program simulates a browser's history. Type a website to update the current site. 
+Type > or < to move forward or backward through the browser history.
+"""
+
 class Stack:
     
     def __init__(self):
